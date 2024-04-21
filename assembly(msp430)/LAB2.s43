@@ -1,0 +1,61 @@
+#include <msp430xG46x.h>   ;define controlled include file
+
+          ORG 1100h
+Id1       DW      2,2,6,8,6,1,4,8
+Id2       DW      0,8,6,7,7,9,9,7
+num       DW      0
+
+          RSEG   CSTACK      ; defines stack segment of 80 words (default)
+          RSEG   CODE        ; ORG 0x2100 - place program in 'CODE' segment in to Flash memory
+                              
+Main      MOV   #SFE(CSTACK),SP   ; mov #0x2100,SP 
+          PUSH  0
+          PUSH  #Id2
+          PUSH  #Id1
+          CALL  #Func
+          POP   num
+L1        JMP   $
+;-----------------------------------
+;       
+;-----------------------------------
+Func      mov #8,R4           ;number of loops
+          clr R14             ;R14 is our counter
+          mov 2(SP),R5
+          mov 4(SP),R10
+L3
+          mov @R5,R6          ;R5 point on address and R6 on value
+          mov @R10,R11        ;R10 address, R11 value
+          sub R11,R6          ;In this stage we are picking the small nummber
+          JN  L2              ;if the one on the left is smaller, just add to R4
+          JZ  L10             ;L10 is in case we have the same num is R11,R6
+          add R11,R14
+          DEC R4
+          JZ  L4
+         
+          JMP L5
+          
+L2        add R11,R6          ;if the one on the right is smaller, we need to
+          add R6,R14          ;add the nummber we subtract(R11) to R6
+          DEC R4
+          JZ  L4
+          JMP L5
+          
+L10       add R11,R14
+          DEC R4
+          JZ  L4
+          JMP L5          
+          
+L5
+          INCD R5
+          INCD R10
+          JMP L3
+L4        
+         
+          mov R14,2(SP)        
+Finish     RET   
+;-------------------------------------------------------------------------------
+          COMMON  INTVEC                  ; Interrupt Vectors
+;-------------------------------------------------------------------------------
+          ORG     RESET_VECTOR            ; POR, ext. Reset
+          DW      Main
+          END

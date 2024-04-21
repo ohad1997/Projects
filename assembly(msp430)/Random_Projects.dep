@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3500353823</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\Debug\Obj\mySum.r43</file>
+      <file>$TOOLKIT_DIR$\inc\msp430xG46x.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
+      <file>$PROJ_DIR$\..\bsp.s43</file>
+      <file>$PROJ_DIR$\LEDs.s43</file>
+      <file>$PROJ_DIR$\..\hal.s43</file>
+      <file>$PROJ_DIR$\..\api.s43</file>
+      <file>$TOOLKIT_DIR$\inc\msp430g2553.h</file>
+      <file>$PROJ_DIR$\hgdhgf\main.s43</file>
+      <file>$TOOLKIT_DIR$\config\lnk430G2553.xcl</file>
+      <file>$PROJ_DIR$\..\bsp.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\flashing_leds_using_macro&amp;function.r43</file>
+      <file>$PROJ_DIR$\task1.s43</file>
+      <file>$PROJ_DIR$\hgdhgf\bsp.s43</file>
+      <file>$PROJ_DIR$\hgdhgf\hal.s43</file>
+      <file>$PROJ_DIR$\mySum.s43</file>
+      <file>$PROJ_DIR$\hgdhgf\bsp.h</file>
+      <file>$PROJ_DIR$\task2_func.s43</file>
+      <file>$PROJ_DIR$\Debug\Obj\pre2.r43</file>
+      <file>$PROJ_DIR$\flashing_leds.s43</file>
+      <file>$PROJ_DIR$\cccccc.s43</file>
+      <file>$PROJ_DIR$\Debug\Obj\dddddd.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\task1.r43</file>
+      <file>$PROJ_DIR$\dddddd.s43</file>
+      <file>$PROJ_DIR$\OR.s43</file>
+      <file>$PROJ_DIR$\LAB2.s43</file>
+      <file>$PROJ_DIR$\..\main.s43</file>
+      <file>$PROJ_DIR$\hgdhgf\api.s43</file>
+      <file>$PROJ_DIR$\Debug\Obj\flashing_leds.r43</file>
+      <file>$PROJ_DIR$\Main.s43</file>
+      <file>$PROJ_DIR$\Debug\Obj\asm.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\OR.r43</file>
+      <file>$PROJ_DIR$\OR.s43.c</file>
+      <file>$PROJ_DIR$\pre2.s43</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\OR.s43.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\msp430.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\cccccc.r43</file>
+      <file>$PROJ_DIR$\task2_main.s43</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\task2_func.r43</file>
+      <file>$PROJ_DIR$\asm.s43</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\OR.s43.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\LAB2.r43</file>
+      <file>$PROJ_DIR$\Debug\Exe\Random_Projects.d43</file>
+      <file>$PROJ_DIR$\Debug\Obj\Random_Projects.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\api.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\task2_main.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\LEDs.r43</file>
+      <file>$PROJ_DIR$\flashing_leds_using_macro&amp;function.s43</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\bsp.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 11 37 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LEDs.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 50</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\hal.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 11 37 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\api.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 11 37 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\hgdhgf\main.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 17 37 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\task1.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\hgdhgf\bsp.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\hgdhgf\hal.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 17 37 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\mySum.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 0</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\task2_func.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\flashing_leds.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\cccccc.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\dddddd.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\OR.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LAB2.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\main.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 11 37 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\hgdhgf\api.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 17 37 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Main.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\OR.s43.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 43 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\pre2.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\task2_main.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\asm.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\Random_Projects.d43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 10 48 40 35 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\Random_Projects.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 36</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\flashing_leds_using_macro&amp;function.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

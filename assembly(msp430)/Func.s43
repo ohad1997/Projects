@@ -1,0 +1,29 @@
+#include <msp430xG46x.h>     ;define controlled include file
+
+         ORG 1100h
+Arr      DW    1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16  
+SIZE     DW    16	
+Avg      DS16  1
+
+         RSEG   CSTACK      ; defines stack segment of 80 words (default)
+         RSEG   CODE        ; ORG 0x2100 - place program in 'CODE' segment in to Flash memory
+                              
+Main     MOV   #SFE(CSTACK),SP   ; mov #0x2100,SP 
+         MOV   #Arr,R5
+         CALL  #Func
+L1       JMP   L1       ; jmp $
+ 
+Func     MOV   SIZE,R6
+         CLR   R7
+L2       ADD   @R5+,R7
+         DEC   R6
+         JNZ   L2
+         RRA   R7
+         MOV   R7,Avg
+         RET
+;-------------------------------------------------------------------------------
+         COMMON  INTVEC                  ; Interrupt Vectors
+;-------------------------------------------------------------------------------
+         ORG     RESET_VECTOR            ; POR, ext. Reset
+         DW      Main
+         END

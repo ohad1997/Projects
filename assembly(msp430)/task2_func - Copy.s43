@@ -1,0 +1,21 @@
+#include "msp430g2553.h"     ;define controlled include file
+
+          PUBLIC  ParityFunc
+          RSEG  CODE
+          
+ParityFunc   MOV 6(SP),R4
+             MOV 2(SP),R5
+             MOV 4(SP),R6
+             CLR  R9
+Loop         CLR  R8 
+             MOV  @R4+,R7
+             RRA  R7
+             ADC  R8
+             MOV  R8,0(R5)
+             INCD R5
+             INC  R9
+             CMP  R9,R6
+             JNE  Loop
+             RET
+             
+             END

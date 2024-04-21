@@ -1,0 +1,83 @@
+#include "msp430g2553.h" // #include <msp430.h> - can be used as well
+
+Debounce     MACRO  cycles
+             LOCAL  L
+             mov.w  cycles,R15     
+L            dec.w  R15                     
+             jnz    L
+             ENDM
+;The code Blinks the LEDs array from P1 or P2 (infinite loop)
+
+            NAME    RESET
+            PUBLIC  RESET,State,DecLedMem,RotLedMem
+            EXTERN  State_0x01,State_0x02,State_0x04
+;-------------------------------------------------------------------------------
+            ORG      0x200                  ; Program Reset
+State       DW       0            
+DecLedMem   DW       0xFF
+RotLedMem   DW       0x01
+;-------------------------------------------------------------------------------             
+             RSEG    CODE   
+             
+RESET       MOV.W   #03FFh,SP               ; Initialize stackpointer
+StopWDT     MOV.W   #WDTPW+WDTHOLD,&WDTCTL  ; Stop WDT
+SetupP1     BIS.B   #0xFF,&P1DIR            ; P1 set to output
+            BIC.B   #0xFF,&P1OUT
+SetupP2     BIC.B   #0x0C,&P2SEL            ; P2.7 set to I/O
+            BIS.B   #0x03,&P2SEL
+            BIS.B   #0x80,&P2DIR            ; P2.0-P2.3 set to input and  P2.7 output
+            BIS.B   #0x0F,&P2IES
+            BIS.B   #0x0F,&P2IE
+            BIC.B   #0xFF,&P2IFG       
+            MOV.B   #0x00,&P2OUT
+            
+state0       cmp     #0,State         ;check if state0           
+             jnz     state1
+             clr.b   &P1OUT
+             bis.w   #CPUOFF+GIE,SR 
+
+state1       cmp     #1,State         ;check if state1
+             jnz     state2   
+             DINT
+             call    #State_0x01           ;infinite function 
+             EINT
+            
+state2       cmp     #2,State         ;check if state2
+             jnz     state0 
+             DINT
+             call    #State_0x02           ;infinite function
+             EINT
+   
+state3       cmp     #4,State         ;check if state2
+             jnz     state0 
+             DINT
+             call    #State_0x04           ;infinite function
+             EINT
+              
+             jmp     state0
+	     nop 
+             
+           
+            
+             
+             
+;Switch_Mode  MOV.B    #0x0F,R4
+;             AND.B    PBstate,R4
+;             CMP.B    #0x01,R4          ;"number 1" switch is on we call the corresponding state func    
+;             JNZ      Check2
+;             CALL     #State_0x01
+;Check2       CMP.B    #0x02,R4          ;"number 2" switch 
+;             JNZ      Check3
+;             CALL     #State_0x02
+;Check3       CMP.B    #0x04,R4          ;"number 3" switch
+;             JNZ      Set_Sleep
+;             CALL     #State_0x04
+;Set_Sleep    BIC.B    #0xFF,&P2OUT      ;if none of the above option 
+;             BIC.B    #0xFF,&P1OUT
+;             JMP      Switch_Mode                         
+;------------------------------------------------------------------------------
+            COMMON  INTVEC
+;-------------------------------------------------------------------------------
+            ORG     RESET_VECTOR                     ; MSP430 RESET Vector
+            DW      RESET                   ;
+            END

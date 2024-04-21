@@ -1,0 +1,32 @@
+#include <msp430xG46x.h>     ;define controlled include file
+
+         NAME Main
+         PUBLIC Main
+         EXTERN ParityFunc
+         ORG 1100h
+Id_1     DW     1,8,5,1,0,4,4,3
+Id_2     DW     1,6,4,8,9,6,3,2
+Size     DW     8
+Parity1  DS16   8
+Parity2  DS16   8
+
+         RSEG   CSTACK      ; defines stack segment of 80 words (default)
+         RSEG   CODE        ; ORG 0x2100 - place program in 'CODE' segment in to Flash memory 
+                              
+Main     MOV   #SFE(CSTACK),SP   ; mov #0x2100,SP
+         PUSH   #Id_1
+         PUSH   Size
+         PUSH   #Parity1
+         CALL   #ParityFunc
+         PUSH   #Id_2
+         PUSH   Size
+         PUSH   #Parity2
+         CALL   #ParityFunc
+         JMP   $
+         
+;-------------------------------------------------------------------------------
+         COMMON  INTVEC                  ; Interrupt Vectors
+;-------------------------------------------------------------------------------
+         ORG     RESET_VECTOR            ; POR, ext. Reset
+         DW      Main
+         END

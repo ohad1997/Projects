@@ -1,0 +1,36 @@
+#include <msp430xG46x.h> 
+
+               ORG 1100h
+id_Dor         DW 1,6,4,8,9,6,3,2
+id_Ohad        DW 1,8,5,1,0,4,4,3
+Length         DW 9
+Num            DW 0
+
+               RSEG  CSTACK
+               RSEG   CODE                       
+                              
+Main        	MOV   #SFE(CSTACK),SP
+                MOV   #id_Dor,R4
+	   	MOV   #id_Ohad,R5
+	   	CALL  #mySum
+Cont1       	JMP    $
+	   
+	
+mySum     	cmp    R4,R5
+	    	jne    recurse
+	    	mov    R4,R6
+	    	ret
+
+recurse	        push   R4
+	  	inc    R4      	; n+1
+	   	call   #mySum
+Cont2       	mov    @SP,R4
+	   	add    R4,R6
+	   	add    #2, SP
+	   	ret
+;-------------------------------------------------------------------------------
+         COMMON  INTVEC                  ; Interrupt Vectors
+;-------------------------------------------------------------------------------
+         ORG     RESET_VECTOR            ; POR, ext. Reset
+         DW      Main
+         END

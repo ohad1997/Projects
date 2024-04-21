@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1714688787</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\pre3.s43</file>
+      <file>$PROJ_DIR$\flashing_leds.s43</file>
+      <file>$PROJ_DIR$\Debug\Obj\task1.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp.r43</file>
+      <file>$PROJ_DIR$\asmCode\bsp.s43</file>
+      <file>$PROJ_DIR$\Debug\Obj\pre3_main.r43</file>
+      <file>$PROJ_DIR$\AND.s43</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\LE11Ds.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\Func.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\api.r43</file>
+      <file>$PROJ_DIR$\asmCode\api.s43</file>
+      <file>$PROJ_DIR$\asmCode\hal.s43</file>
+      <file>$PROJ_DIR$\pre_lab3_function.s43</file>
+      <file>$PROJ_DIR$\Tutorial3.1-Ex_1.s43</file>
+      <file>$PROJ_DIR$\pre3_main.s43</file>
+      <file>$TOOLKIT_DIR$\inc\msp430g2553.h</file>
+      <file>$PROJ_DIR$\task2_func.s43</file>
+      <file>$TOOLKIT_DIR$\inc\msp430xG46x.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\eeeee.r43</file>
+      <file>$TOOLKIT_DIR$\config\lnk430FG4618.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\AND.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\flashing_leds.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\pre3.r43</file>
+      <file>$PROJ_DIR$\asmCode\main.s43</file>
+      <file>$PROJ_DIR$\LEDs.s43</file>
+      <file>$PROJ_DIR$\asmCode\bsp.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Tutorial3.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\XOR.r43</file>
+      <file>$PROJ_DIR$\LE11Ds.s43</file>
+      <file>$PROJ_DIR$\pre4_func.s43</file>
+      <file>$PROJ_DIR$\pre3_func.s43</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal.r43</file>
+      <file>$PROJ_DIR$\task1.s43</file>
+      <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\pre_lab3_function.r43</file>
+      <file>$PROJ_DIR$\eeeee.s43</file>
+      <file>$PROJ_DIR$\Debug\Obj\LAB2.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\task2_func.r43</file>
+      <file>$TOOLKIT_DIR$\inc\msp430.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Tutorial3.1-Ex_1.r43</file>
+      <file>$PROJ_DIR$\Debug\Exe\task1.s43.d43</file>
+      <file>$PROJ_DIR$\Debug\Obj\LEDs.r43</file>
+      <file>$PROJ_DIR$\XOR.s43</file>
+      <file>$PROJ_DIR$\pre4_main.s43</file>
+      <file>$PROJ_DIR$\Debug\Obj\pre4_func.r43</file>
+      <file>$PROJ_DIR$\Func.s43</file>
+      <file>$PROJ_DIR$\Debug\Obj\pre4_main.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\pre3_func.r43</file>
+      <file>$PROJ_DIR$\LAB2.s43</file>
+      <file>$PROJ_DIR$\hgdhgf\main.s43</file>
+      <file>$PROJ_DIR$\hgdhgf\api.s43</file>
+      <file>$PROJ_DIR$\fdsfd.s43</file>
+      <file>$PROJ_DIR$\hgdhgf\bsp.h</file>
+      <file>$PROJ_DIR$\hgdhgf\hal.s43</file>
+      <file>$PROJ_DIR$\hgdhgf\bsp.s43</file>
+      <file>$PROJ_DIR$\flashing_leds_using_macro&amp;function.s43</file>
+      <file>$PROJ_DIR$\Write_a_word_t_Port_B.s43</file>
+      <file>$PROJ_DIR$\task2.s43</file>
+      <file>$PROJ_DIR$\LEDs_SW_PB.s43</file>
+      <file>$PROJ_DIR$\mmmmmm.s43</file>
+      <file>$PROJ_DIR$\Mirror_Str.s43</file>
+      <file>$PROJ_DIR$\pre2.s43</file>
+      <file>$PROJ_DIR$\Macro.s43</file>
+      <file>$PROJ_DIR$\hhh.s43</file>
+      <file>$PROJ_DIR$\ggggg.s43</file>
+      <file>$PROJ_DIR$\mySum.s43</file>
+      <file>$PROJ_DIR$\OR.s43</file>
+      <file>$PROJ_DIR$\Write_a_word_t_Port_A.s43</file>
+      <file>$PROJ_DIR$\task3_func.s43</file>
+      <file>$PROJ_DIR$\Tutorial3.1-Ex_2.s43</file>
+      <file>$PROJ_DIR$\task2_func - Copy.s43</file>
+      <file>$PROJ_DIR$\task2_main.s43</file>
+      <file>$PROJ_DIR$\task3_main.s43</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\pre3.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\flashing_leds.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\asmCode\bsp.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 26 39 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\AND.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 18</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\asmCode\api.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 10</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 26 39 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\asmCode\hal.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 26 39 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\pre_lab3_function.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Tutorial3.1-Ex_1.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 40 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 18</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\pre3_main.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 5</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\task2_func.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\asmCode\main.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 7</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 26 39 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LEDs.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LE11Ds.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 8</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\pre4_func.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\pre3_func.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\task1.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 2</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 18</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\eeeee.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\task1.s43.d43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 20 34 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\XOR.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 18</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\pre4_main.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Func.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LAB2.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 37</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 18</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+
