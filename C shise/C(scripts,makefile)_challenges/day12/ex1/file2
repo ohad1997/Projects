@@ -1,0 +1,5 @@
+i am file 2
+
+One of the C language’s universal variables is errno. It contains a code describing details about why a particular operation failed. You can use errno in your code to provide better, more informative error messages for your programs.
+
+The codes and constants defined by errno are listed in the errno.h header file. Click here to see an example of how that file may look. Each compiler may list additional code values, but the core values are consistent from machine to machine, especially for file access.
