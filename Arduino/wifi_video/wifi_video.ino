@@ -1,7 +1,7 @@
 #include<ESP8266WiFi.h>
 
 #define ssid "cohen1"
-#define password "0545606242"
+#define password "125478"
 
 void setup(){
 
